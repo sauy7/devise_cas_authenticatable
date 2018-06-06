@@ -34,5 +34,6 @@ Castronaut.config = Castronaut::Configuration.load(File.expand_path(File.join(Fi
 module Scenario
   class Application < Rails::Application
     config.active_support.deprecation = :stderr
+    config.active_record.sqlite3.represent_boolean_as_integer = true
   end
 end
